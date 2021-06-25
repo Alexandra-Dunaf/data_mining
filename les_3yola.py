@@ -36,3 +36,5 @@ class AutoyoulaSpider(scrapy.Spider):
             except (ValueError, AttributeError):
                 continue
         self.db_client[self.crawler.settings.get("BOT_NAME", "parser")][self.name].insert_one(data)
+        
+        
