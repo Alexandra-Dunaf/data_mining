@@ -111,3 +111,4 @@ if __name__ == '__main__':
     db = client_db["gb_parse_18_05"]
     parser = GbBlogParse("https://gb.ru/posts", db)
     parser.run()
+
